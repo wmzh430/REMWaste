@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Satoshi";
+  font-style: normal;
+  src: url("./fonts/Satoshi-Regular.otf");
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  font-style: normal;
+  src: url("./fonts/Satoshi-Bold.otf");
+}
+
+@theme {
+  --font-satoshi: "Satoshi"; 
+  --font-satoshi-bold: "Satoshi-Bold";
+
+  --text-base: 16px;
+  --text-base--line-height: 24px;
+  --text-l: 36px;
+  --text-l--line-height: 40px;
+  --text-xl: 48px;
+  --text-xl--line-height: 48px;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --radius-x-small: 4px;
+  --radius-small: 8px;
+  --radius-medium: 16px;
+  --radius-large: 32px;
+  --radius-x-large: 64px;
+  --radius-pill: 99999px;
+
+  --color-default: #1C1C1C;
+  --color-primary: #0037C1;
+  --color-primary-hover: #002da1;
+  --color-primary-light: #0F2B70;
+  --color-secondary: #2A2A2A;
+  --color-secondary-hover: #3A3A3A;
+}
